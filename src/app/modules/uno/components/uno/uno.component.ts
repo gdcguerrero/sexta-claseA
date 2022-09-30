@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Params } from '@angular/router';
 import { Observable, tap } from 'rxjs';
 
 @Component({
@@ -18,16 +18,15 @@ export class UnoComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // console.log('in component');
-
-    // this.activeRoute.data.subscribe(
-    //   {
-    //     next:
-    //       (resp) => {
-    //         //console.log('component1 > ',resp);
-    //       }
+    // this.activeRoute.queryParams.subscribe(
+    //   (params: Params) => {
+    //     console.log(params);
+    //     //this.name = params['name']
     //   }
     // )
   }
+  // goParams(){
+  //   this.unoServices.goParams();
+  // }
 
 }
